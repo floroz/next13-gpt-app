@@ -1,6 +1,6 @@
-function Provider() {
+function Provider({children}: {children: React.ReactNode}) {
   return (
-    <div>Provider</div>
+    <div>{children}</div>
   )
 }
 

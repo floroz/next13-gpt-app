@@ -1,3 +1,5 @@
+import Nav from '@/components/nav'
+import Provider from '@/components/provider'
 import '@/styles/main.scss'
 import type { Metadata } from 'next'
 
@@ -18,7 +20,10 @@ export default function RootLayout({
         <div className="main"> 
            <div className=""> 
              <main className="app"> 
-              {children}
+              <Provider>
+                <Nav />
+                {children}
+              </Provider>
              </main> 
            </div> 
          </div> 
